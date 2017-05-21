@@ -1,0 +1,69 @@
+header {
+  position: fixed;
+  width: 100%;
+  padding: 1rem;
+  background: transparent;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  @include for-tablet-portrait-up{
+    padding: 2rem;
+  }
+}
+.brand {
+  a {
+    font: $headings-font-weight 1.4rem $headings-font-family;
+    color: #fff;
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}
+#navButton {
+  cursor: pointer;
+  background: none;
+  border: none;
+  i {
+    color: #fff;
+    font-weight: 900;
+  }
+}
+%nav-item {
+  text-align: center;
+  display: block;
+  font-family: $headings-font-family;
+}
+.header-nav {
+  position: fixed;
+  z-index: 20;
+  bottom: -420px;
+  left: 0;
+  margin-bottom: 0;
+  width: 100%;
+  transition: 0.4s ease;
+  li {
+    @extend %nav-item;
+    background: rgba(0,0,0,0.85);
+    border-top: 1px solid darken($brand, 20%);
+    &:last-child {
+      padding-top: 2rem;
+      padding-bottom: 2rem;
+      font-style: italic;
+    }
+    a {
+      @extend %nav-item;
+      padding-top: 2rem;
+      padding-bottom: 2rem;
+      color: #fff;
+      font-weight: $headings-font-weight;
+      &:hover {
+        background: $brand;
+        text-decoration: none;
+      }
+    }
+  }
+}
+.menu-open {
+  bottom: 0;
+}

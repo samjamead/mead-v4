@@ -1,0 +1,21 @@
+// Reset
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 15px;
+}
+body, h1, h2, h3, h4, h5, h6, p, blockquote, pre, hr, dl, dd, ol, ul, figure {
+  margin: 0;
+  padding: 0;
+}
+// Set `margin-bottom` to maintain vertical rhythm
+h1, h2, h3, h4, h5, h6, p, blockquote, pre, ul, ol, dl, figure, %vertical-rhythm {
+  margin-bottom: 1rem;
+}
+//Clearfix
+%clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}

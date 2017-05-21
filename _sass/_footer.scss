@@ -1,0 +1,10 @@
+footer {
+  margin-top: 4rem;
+  border-top: 1px solid $brand;
+  @include for-tablet-portrait-up{
+    padding: 2rem;
+  }
+  .footer-wrapper {
+    @extend .wrapper;
+  }
+}

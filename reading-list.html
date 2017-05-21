@@ -1,0 +1,20 @@
+---
+layout: default
+permalink: /reading-list/
+title: Reading List
+---
+
+<div class="wrapper">
+
+  <ul class="post-list">
+    {% for book in site.reading_list %}
+      <li>
+        <span class="post-meta">Date Finished: {{ book.date | date: "%b %-d, %Y" }}</span>
+        <h3>{{ book.title | escape }}</h3>
+        <span><em>{{ book.author }}</em></span>
+        <p class="post-description">{{ book.content }}</p>
+      </li>
+    {% endfor %}
+  </ul>
+
+</div>

@@ -1,0 +1,43 @@
+body.home {
+  background: $brand;
+}
+.home-wrapper {
+  @extend .wrapper;
+  max-width: 600px;
+  padding-top: 30vh;
+  blockquote {
+    position: relative;
+    margin: 0 auto 8rem;
+    max-width: 450px;
+    color: #fff;
+    font-size: 1.5rem;
+    span {
+      @include for-tablet-portrait-up {
+        display: block;
+      }
+    }
+    p {
+      font-family: $headings-font-family;
+      margin-top: 1rem;
+      text-align: right;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+    }
+  }
+}
+#devon {
+  position: fixed;
+  left: 1.2rem;
+  bottom: 1.4rem;
+  img {
+    width: 66px;
+    box-shadow: 0 0 9px 7px rgba(0,0,0,0.15);
+  }
+  @include for-tablet-portrait-up {
+    left: 2rem;
+    bottom: 2rem;
+    img {
+      width: 100px;
+    }
+  }
+}

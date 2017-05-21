@@ -1,0 +1,16 @@
+p {
+  font-size: $base-font-size * 0.87;
+}
+h1 {
+  font-size: $base-font-size * 1.73;
+}
+@include for-big-phones {
+  p {
+    font-size: $base-font-size * 0.95;
+  }
+}
+@include for-tablet-portrait-up {
+  p {
+    font-size: $base-font-size;
+  }
+}

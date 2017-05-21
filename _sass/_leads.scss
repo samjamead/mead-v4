@@ -1,0 +1,19 @@
+body.leads {
+  header {
+    background: $brand;
+    @include for-tablet-portrait-up {
+      padding: 1rem 2rem;
+    }
+  }
+  .leads-wrapper {
+    @extend .wrapper;
+    padding-top: 6rem;
+  }
+  input {
+    display: block;
+    margin-bottom: 1rem;
+  }
+  select {
+    margin-bottom: 1rem;
+  }
+}

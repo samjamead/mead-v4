@@ -1,0 +1,41 @@
+body.about {
+  header {
+    background: $brand;
+    @include for-tablet-portrait-up {
+      padding: 1rem 2rem;
+    }
+  }
+}
+.about-wrapper {
+  @extend .wrapper;
+  padding-top: 4rem;
+  text-align: justify;
+  .hero {
+    margin: 2rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    h1 {
+      margin-bottom: 0;
+      line-height: 1em;
+    }
+    img {
+      max-width: 150px;
+      @include for-tablet-portrait-up {
+        max-width: 200px;
+      }
+    }
+  }
+  blockquote {
+    margin-bottom: 4rem;
+    font-size: 1.5rem;
+    width: 100%;
+    position: relative;
+    margin: 1.333rem auto;
+    @include for-tablet-landscape-up {
+      width: 100%;
+      margin: 1.5rem -40% 1.5rem 1.5rem;
+      float: right;
+    }
+  }
+}

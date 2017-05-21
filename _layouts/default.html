@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+
+  {% include head.html %}
+
+  <body class="{{ page.body }}">
+
+    {% include header.html %}
+
+    {{ content }}
+
+    {% include footer.html %}
+
+  </body>
+
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript" src="/scripts/scripts.js"></script>
+
+</html>

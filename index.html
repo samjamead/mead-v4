@@ -1,0 +1,32 @@
+---
+layout: default
+body: home
+---
+
+<a href="/about" id="devon">
+  <img src="/img/devon.png" />
+</a>
+
+<div class="home-wrapper">
+
+    <blockquote>
+      <span>To succeed, planning alone is insufficient. </span>
+      <span>One must improvise as well. </span>
+      <p>&mdash; Isaac Asimov</p>
+    </blockquote>
+
+    <ul class="post-list">
+      {% for post in site.posts %}
+        <li>
+          <div class="post-date">
+            <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+          </div>
+          <div class="post-meta">
+            <h2><a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a></h2>
+            <span class="post-description">{{ post.description }}</span>
+          </div>
+        </li>
+      {% endfor %}
+    </ul>
+
+</div>

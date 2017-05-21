@@ -1,0 +1,31 @@
+@charset "utf-8";
+
+// Define variables
+$base-font-family: 'Merriweather', "Helvetica Neue", Helvetica, Arial, sans-serif;
+$headings-font-family: 'Lato', $base-font-family;
+$base-font-size:   15px;
+$base-font-weight: 400;
+$headings-font-weight: 900;
+$base-line-height: 1.5;
+
+$text-color:       #111;
+$background-color: #fdfdfd;
+$brand:            #433d8d;
+$light-brand:      #4ea9d9;
+
+$grey-color:       #828282;
+$grey-color-light: lighten($grey-color, 40%);
+$grey-color-dark:  darken($grey-color, 25%);
+
+// Import partials.
+@import
+  "base",
+  "global",
+  "breakpoints",
+  "header",
+  "footer",
+  "home",
+  "about",
+  "leads",
+  "typography"
+;
